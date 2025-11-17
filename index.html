@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11/18 課程總覽：書信、邀請函與 AI 應用</title>
+    <!-- 載入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 使用 Inter 字體 */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+            color: #1f2937;
+        }
+        /* 自訂主要藍色 */
+        .primary-color {
+            background-color: #3b82f6; /* Blue 500 */
+        }
+        .text-primary-color {
+            color: #2563eb; /* Blue 600 */
+        }
+        /* 隱藏內容區塊 */
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        /* 確保細節展開時有動畫效果 */
+        details summary {
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        details[open] summary {
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .details-content {
+            padding: 1rem;
+            background-color: #f9fafb;
+            border-bottom-left-radius: 0.5rem;
+            border-bottom-right-radius: 0.5rem;
+        }
+        .term-table th, .term-table td {
+            padding: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden">
+        
+        <!-- 標題區塊 -->
+        <header class="primary-color text-white p-6 md:p-8">
+            <h1 class="text-3xl font-extrabold mb-1">書信、邀請函與 AI 應用課程總覽</h1>
+            <p class="text-indigo-100 text-lg">整合 11/18 課程講義與 AI 寫作補充內容</p>
+        </header>
+
+        <!-- 導覽標籤 -->
+        <div class="flex border-b border-gray-200">
+            <button class="tab-button flex-1 py-4 px-2 text-center text-sm md:text-base font-semibold transition duration-300 ease-in-out border-b-2 border-transparent hover:bg-gray-50" data-tab="basics">
+                傳統書信與應用文基礎
+            </button>
+            <button class="tab-button flex-1 py-4 px-2 text-center text-sm md:text-base font-semibold transition duration-300 ease-in-out border-b-2 border-transparent hover:bg-gray-50" data-tab="structure">
+                結構與常見術語
+            </button>
+            <button class="tab-button flex-1 py-4 px-2 text-center text-sm md:text-base font-semibold transition duration-300 ease-in-out border-b-2 border-primary-color text-primary-color active-tab-button" data-tab="ai-invitation">
+                AI 時代的邀請函寫作
+            </button>
+        </div>
+
+        <!-- 內容區塊 -->
+        <main class="p-6 md:p-8">
+            
+            <!-- 標籤頁 1: 傳統書信與應用文基礎 -->
+            <section id="basics" class="tab-content">
+                <h2 class="text-2xl font-bold mb-4 text-primary-color border-b pb-2">傳統書信與應用文基礎</h2>
+                
+                <details class="mb-4 bg-gray-50 rounded-lg shadow-md overflow-hidden">
+                    <summary class="p-4 font-semibold text-lg hover:bg-gray-100">書信的意義、種類與原則</summary>
+                    <div class="details-content">
+                        <h3 class="font-bold text-gray-700 mb-2">一、書信的意義</h3>
+                        <ul class="list-disc ml-6 space-y-1 text-gray-600">
+                            <li>有一定的對象，必須注意禮節，尊重對方的地位。</li>
+                            <li>以實際問題為內容，有一定的範圍，文字必須力求簡明扼要。</li>
+                            <li>有一定的格式，有專門的用語，必須依照一般的習慣。</li>
+                        </ul>
+
+                        <h3 class="font-bold text-gray-700 mt-4 mb-2">二、書信的種類</h3>
+                        <ul class="list-disc ml-6 space-y-1 text-gray-600">
+                            <li>**依「人」而分：** 上行 (長輩/上司)、平行 (平輩/朋友)、下行 (晚輩/學生)。</li>
+                            <li>**依「事」而分：** 應酬 (慶賀、弔唁)、應用 (請託、推薦)、議論 (論學、勤勉)、聯絡 (問候、通知)。</li>
+                        </ul>
+
+                        <h3 class="font-bold text-gray-700 mt-4 mb-2">三、書信的寫作原則</h3>
+                        <p class="text-gray-600">必須弄清楚兩個問題：**「對象是誰？」**、**「談些什麼？」**，並依親疏遠近、內容需要，使用適當的詞語，力求語氣懇切、行文簡要。</p>
+                    </div>
+                </details>
+                
+                <details class="mb-4 bg-gray-50 rounded-lg shadow-md overflow-hidden">
+                    <summary class="p-4 font-semibold text-lg hover:bg-gray-100">應用文的定義與特質</summary>
+                    <div class="details-content">
+                        <h3 class="font-bold text-gray-700 mb-2">應用文的定義</h3>
+                        <p class="text-gray-600">針對特定事件、特定目的而寫作，具有特定格式的文章，包括「個人與個人」、「機關團體與機關團體」、「個人與機關團體」之間的文書往來。</p>
+                        
+                        <h3 class="font-bold text-gray-700 mt-4 mb-2">應用文的特質</h3>
+                        <ul class="list-disc ml-6 space-y-1 text-gray-600">
+                            <li>**內容：** 多取材於日常生活，因應某一事件需要而寫作。</li>
+                            <li>**對象：** 特定的一人或團體，有一定時效性。</li>
+                            <li>**格式：** 寫作格式為約定俗成，必須遵守。</li>
+                            <li>**術語：** 有專門的術語，需謹慎使用。</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="mb-4 bg-gray-50 rounded-lg shadow-md overflow-hidden">
+                    <summary class="p-4 font-semibold text-lg hover:bg-gray-100">應用文的常見種類 (21類)</summary>
+                    <div class="details-content">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-600">
+                            <ul class="list-disc ml-6 space-y-1">
+                                <li>書信 (聯絡感情、洽辦事務)</li>
+                                <li>便條 (簡便字條)</li>
+                                <li>名片 (姓名簡介資料)</li>
+                                <li>柬帖 (婚喪喜慶、交際應酬)</li>
+                                <li>對聯 (對偶形式)</li>
+                                <li>題辭 (頌揚、祝福、哀悼)</li>
+                                <li>標語 (宣傳文字)</li>
+                                <li>慶賀文 (慶賀喜事)</li>
+                                <li>祭弔文 (喪事弔唁)</li>
+                                <li>公文 (處理公務)</li>
+                                <li>會議文書 (通知、紀錄、簽到簿)</li>
+                            </ul>
+                            <ul class="list-disc ml-6 space-y-1">
+                                <li>簡報 (介紹工作、設施、產品)</li>
+                                <li>規章 (規則、章程、條例)</li>
+                                <li>契約 (規定權利義務)</li>
+                                <li>書狀 (履行權利或義務的簽署文件)</li>
+                                <li>存證信函 (郵局證明內容及日期)</li>
+                                <li>單據 (貨物交付和貨款支付依據)</li>
+                                <li>啟事 (向公眾說明或希望協辦)</li>
+                                <li>廣告 (產品宣傳)</li>
+                                <li>企畫書 (達成目標或效益的規劃文書)</li>
+                                <li>自傳履歷 (自述生平)</li>
+                            </ul>
+                        </div>
+                        <h3 class="font-bold text-gray-700 mt-4 mb-2">應用文寫作原則</h3>
+                        <p class="text-gray-600">符合時代潮流、具備各種知識、不逾越權限、內容切合實際、格式正確、文字簡淺明確。</p>
+                    </div>
+                </details>
+
+            </section>
+
+            <!-- 標籤頁 2: 結構與常見術語 -->
+            <section id="structure" class="tab-content">
+                <h2 class="text-2xl font-bold mb-4 text-primary-color border-b pb-2">書信結構與常見術語</h2>
+
+                <details class="mb-4 bg-gray-50 rounded-lg shadow-md overflow-hidden">
+                    <summary class="p-4 font-semibold text-lg hover:bg-gray-100">四、封文 (信封) 結構</summary>
+                    <div class="details-content space-y-4">
+                        <h3 class="font-bold text-gray-700">直式信封 (郵票貼左上角)</h3>
+                        <ul class="list-disc ml-6 space-y-1 text-gray-600">
+                            <li>**中間：** 受信人的姓名、稱謂、啟封詞。</li>
+                            <li>**右邊：** 受信人的郵遞區號、地址。</li>
+                            <li>**左邊：** 發信人的地址、發信人的姓(或姓名)、緘封詞、郵遞區號。</li>
+                            <li>**信封重點：** 啟封詞、緘封詞。**【注意】** 絕對不可使用「恭啟」、「敬啟」。</li>
+                        </ul>
+                        
+                        <h3 class="font-bold text-gray-700 pt-2">橫式信封 (郵票貼右上角)</h3>
+                        <ul class="list-disc ml-6 space-y-1 text-gray-600">
+                            <li>**上行 (寄信人)：** 郵遞區號、地址、姓名或商號名稱、緘封詞。</li>
+                            <li>**下行 (受信人)：** 郵遞區號、地址、姓名、稱謂、啟封詞。</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="mb-4 bg-gray-50 rounded-lg shadow-md overflow-hidden">
+                    <summary class="p-4 font-semibold text-lg hover:bg-gray-100">五、箋文 (信紙) 結構 (前中後三段)</summary>
+                    <div class="details-content">
+                        <ol class="list-decimal ml-6 space-y-2 text-gray-600">
+                            <li class="font-bold text-gray-700">前段 (確定關係、請求察閱)
+                                <ul class="list-disc ml-4 font-normal text-gray-600">
+                                    <li>1. 稱謂 (發信者與受信者關係)</li>
+                                    <li>2. 提稱語 (請求受信者察閱)</li>
+                                    <li>3. 啟事敬辭 (陳述發語詞，現代多省略)</li>
+                                </ul>
+                            </li>
+                            <li class="font-bold text-gray-700 mt-2">中段 (核心內容)
+                                <ul class="list-disc ml-4 font-normal text-gray-600">
+                                    <li>4. 開頭應酬語 (關懷問候，現代有時可省略)</li>
+                                    <li>5. 正文 (書信主體內容，力求語氣懇切、條理清楚)</li>
+                                </ul>
+                            </li>
+                            <li class="font-bold text-gray-700 mt-2">後段 (禮貌、署名、日期)
+                                <ul class="list-disc ml-4 font-normal text-gray-600">
+                                    <li>6. 結尾應酬語 (避免突然收結，可省略)</li>
+                                    <li>7. 結尾敬辭 (表示禮貌之意)</li>
+                                    <li>8. 自稱、署名、末啟詞</li>
+                                    <li>9. 寫信時間</li>
+                                    <li>10. 並候語 (請代為問候他人)</li>
+                                    <li>11. 附件語、12. 附候語、13. 補述語 (補充、問候親友)</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </details>
+
+                <details class="mb-4 bg-gray-50 rounded-lg shadow-md overflow-hidden">
+                    <summary class="p-4 font-semibold text-lg hover:bg-gray-100">六、書信常見術語 (稱謂、提稱語、問候語)</summary>
+                    <div class="details-content space-y-6">
+                        <h3 class="font-bold text-gray-700">（一）親人稱謂簡表 (稱人 / 自稱 / 對他人稱 / 對他人自稱)</h3>
+                        <div class="overflow-x-auto">
+                            <table class="w-full term-table text-sm text-left text-gray-600">
+                                <thead class="text-xs text-gray-900 uppercase bg-gray-100">
+                                    <tr><th>對象</th><th>稱人</th><th>自稱</th><th>對他人稱</th><th>對他人自稱</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="bg-white"><td>祖父/母</td><td></td><td>孫/孫女</td><td>令祖/祖母</td><td>家祖父/母 (家大父/母)</td></tr>
+                                    <tr class="bg-gray-50"><td>父/母親</td><td></td><td>男/女 (兒)</td><td>令尊/堂 (尊公/堂)</td><td>家父/母 (家嚴/慈)</td></tr>
+                                    <tr class="bg-white"><td>兄嫂</td><td>某哥/姊</td><td>弟/妹</td><td>令兄/嫂</td><td>家兄/嫂</td></tr>
+                                    <tr class="bg-gray-50"><td>吾夫</td><td></td><td>妻/某某</td><td>尊夫/令夫君</td><td>外子 (某某)</td></tr>
+                                    <tr class="bg-white"><td>吾妻</td><td></td><td>夫/某某</td><td>尊/嫂夫人</td><td>內子/人</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3 class="font-bold text-gray-700">（二）提稱語 (請求閱讀)</h3>
+                        <ul class="list-disc ml-6 space-y-1 text-gray-600">
+                            <li>**祖父母及父母：** 膝下、膝前</li>
+                            <li>**長輩：** 尊前、尊鑒、賜鑒、鈞鑒</li>
+                            <li>**師長：** 函丈、壇席、講座、尊鑒</li>
+                            <li>**平輩：** 臺鑒、大鑒、惠鑒、左右、足下</li>
+                            <li>**晚輩：** 青鑒、青覽、如晤、收覽</li>
+                            <li>**政界/軍界：** 勛鑒、鈞鑒、鈞座、麾下</li>
+                        </ul>
+
+                        <h3 class="font-bold text-gray-700">（三）問候語 (結尾敬語)</h3>
+                        <ul class="list-disc ml-6 space-y-1 text-gray-600">
+                            <li>**祖父母及父母：** 敬請 福安、敬請 金安</li>
+                            <li>**親友長輩：** 恭請 崇安、敬頌 福祉</li>
+                            <li>**師長：** 恭請 誨安、敬請 道安</li>
+                            <li>**政界：** 敬請 勛安、恭請 鈞安</li>
+                            <li>**商界：** 敬請 籌安、順候 財安</li>
+                            <li>**問疾：** 恭請 痊安、順祝 早痊</li>
+                        </ul>
+                    </div>
+                </details>
+            </section>
+
+            <!-- 標籤頁 3: AI 時代的邀請函寫作 -->
+            <section id="ai-invitation" class="tab-content active">
+                <h2 class="text-2xl font-bold mb-4 text-primary-color border-b pb-2">AI 時代的邀請函寫作</h2>
+
+                <details class="mb-4 bg-blue-50 rounded-lg shadow-md overflow-hidden" open>
+                    <summary class="p-4 font-semibold text-lg hover:bg-blue-100">七、邀請函的定義與結構</summary>
+                    <div class="details-content">
+                        <p class="text-gray-600 mb-4">邀請函是邀請知名人士、專家等參加某項活動時所發的請約性書信。它可以是「喜帖」、「請柬」或「事務信函」，但都依託於書信的形式而存在。</p>
+                        
+                        <h3 class="font-bold text-gray-700 mb-2">邀請函的基本結構</h3>
+                        <ul class="list-disc ml-6 space-y-1 text-gray-600">
+                            <li>**標題：** 明確指出主題。</li>
+                            <li>**稱謂：** 對受邀人的尊稱。</li>
+                            <li>**正文：** 活動內容、**時間、地點** (必須要素)。</li>
+                            <li>**落款：** 邀請人/單位名稱、寄信時間。</li>
+                        </ul>
+                        <p class="mt-2 text-sm text-blue-600">範例結構：稱謂 (如：教授道鑒) → 開頭應酬語 (如：光陰荏苒...) → 邀請的正文 (內容、時間、地點) → 邀請人/單位、寄信時間 (落款)。</p>
+                    </div>
+                </details>
+
+                <details class="mb-4 bg-green-50 rounded-lg shadow-md overflow-hidden">
+                    <summary class="p-4 font-semibold text-lg hover:bg-green-100">【AI 應用】何時適合用生成式 AI (如 ChatGPT)？</summary>
+                    <div class="details-content">
+                        <ul class="list-disc ml-6 space-y-2 text-gray-700">
+                            <li>活動訊息很雜亂，卻又沒有時間梳理。</li>
+                            <li>對活動毫無頭緒，不知該如何下手。</li>
+                            <li>不想記一大堆傳統格式跟用語。</li>
+                            <li>想要表現出不同的創意。</li>
+                            <li>**總結：** 適用於需要快速梳理資訊、生成創意文案或擺脫傳統格式限制的場景。</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="mb-4 bg-yellow-50 rounded-lg shadow-md overflow-hidden">
+                    <summary class="p-4 font-semibold text-lg hover:bg-yellow-100">【AI 應用】優秀邀請函須包含的關鍵元素</summary>
+                    <div class="details-content">
+                        <p class="font-semibold text-gray-700 mb-2">一封優秀的邀請函應該清晰、吸引人且富有親和力，包含以下關鍵元素：</p>
+                        <ul class="list-disc ml-6 space-y-1 text-gray-700">
+                            <li>**受邀人姓名與稱謂**</li>
+                            <li>**活動名稱與目的** (清晰傳達活動的價值)</li>
+                            <li>**日期、時間、地點** (明確的活動資訊)</li>
+                            <li>**活動亮點與議程** (吸引人的內容)</li>
+                            <li>**主辦方資訊** (專業性與信譽)</li>
+                            <li>**回覆確認 (RSVP) 方式與期限** (明確的參與方式)</li>
+                            <li>**個性化的開場與結尾** (展現對受邀人的重視)</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="mb-4 bg-teal-50 rounded-lg shadow-md overflow-hidden">
+                    <summary class="p-4 font-semibold text-lg hover:bg-teal-100">【AI 應用】AI 在邀請函框架中的具體應用</summary>
+                    <div class="details-content">
+                        <p class="text-gray-700 mb-2 font-semibold">生成式 AI 可協助完成邀請函的各個環節，確保內容的專業度與吸引力：</p>
+                        <ul class="list-disc ml-6 space-y-2 text-gray-700">
+                            <li>**內容生成與梳理：** 將活動大綱或零散資訊輸入 AI，快速產出結構完整、條理清晰的正文內容。
+                                <div class="bg-teal-100 p-3 rounded-md mt-2 text-sm italic border-l-4 border-teal-500">
+                                    <span class="font-semibold text-teal-700">範例提示語：</span>「我這裡有一份關於**新產品發布會**的零散資訊，包括時間**[10/25 上午10點]**、主題**[AI 驅動的寫作助理]**、地點**[線上會議室]**。請將這些內容組合成一段**具備吸引力**且**條理清晰**的邀請函正文。」
+                                </div>
+                            </li>
+                            <li>**風格與語氣調整：** 根據受邀對象（如長輩、平輩、商務夥伴）調整信件的語氣，從正式、傳統到活潑、創意均可一鍵切換。
+                                <div class="bg-teal-100 p-3 rounded-md mt-2 text-sm italic border-l-4 border-teal-500">
+                                    <span class="font-semibold text-teal-700">範例提示語：</span>「請將這段商務邀請函內容的語氣，調整成對**長期合作夥伴**的**溫馨且感激**的語氣，並使用**『鈞鑒』**作為提稱語。」
+                                </div>
+                            </li>
+                            <li>**格式檢查與糾錯：** 雖然 AI 仍需人為指導，但它能快速檢查基本的書信格式和禮儀用語，避免重大錯誤。</li>
+                            <li>**多語言版本轉換：** 輕鬆將邀請函從中文轉換為英文或其他語言版本，方便國際交流。</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="mb-4 bg-purple-50 rounded-lg shadow-md overflow-hidden">
+                    <summary class="p-4 font-semibold text-lg hover:bg-purple-100">【AI 應用】創意設計：撰寫個性化開場與結尾</summary>
+                    <div class="details-content">
+                        <p class="text-gray-700 mb-2 font-semibold">利用 AI 進行設計，使邀請函更具溫度和吸引力：</p>
+                        <ul class="list-disc ml-6 space-y-3 text-gray-700">
+                            <li>
+                                **個性化開場語 (破冰)：** AI 可根據受邀人背景或與主辦方的關係，生成獨特的開場白，避免制式的「光陰荏苒」等語句，增進親切感。
+                                <div class="bg-purple-100 p-3 rounded-md mt-2 text-sm italic border-l-4 border-purple-500">
+                                    <span class="font-semibold text-purple-700">範例提示語：</span>「請為**王教授**設計一段開場白，提到他**上次演講**中關於**唐詩研究**的見解，並自然引導至本次**文化交流茶會**的邀請。」
+                                </div>
+                            </li>
+                            <li>
+                                **活動氛圍營造：** 透過 AI 描述，將活動的細節和期待的氛圍（如「溫馨且有質感的品酒之夜」）具體化，增加受邀人的參與慾望。
+                                <div class="bg-purple-100 p-3 rounded-md mt-2 text-sm italic border-l-4 border-purple-500">
+                                    <span class="font-semibold text-purple-700">範例提示語：</span>「請用**充滿詩意**的詞彙，描寫我們這次**新書發表會**的氛圍。主題是**『在科技喧囂中尋覓片刻寧靜』**，地點在**老宅咖啡廳**。」
+                                </div>
+                            </li>
+                            <li>
+                                **明確的行動呼籲 (CTA) 與結語：** 在結尾處，AI 確保 RSVP 方式、期限等資訊被清楚且禮貌地呈現，提高回覆率，並圓滿收束信函。
+                                <div class="bg-purple-100 p-3 rounded-md mt-2 text-sm italic border-l-4 border-purple-500">
+                                    <span class="font-semibold text-purple-700">範例提示語：</span>「請為一段**專業論壇**的邀請函設計結尾。必須**禮貌地要求對方在三天內回覆**是否出席，並使用**『敬請 撥冗』**作為結尾敬語。」
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
+
+                <!-- 新增區塊：AI 寫作的潛在問題與注意事項 (已加入顏色標註) -->
+                <details class="mb-4 bg-white rounded-lg shadow-xl overflow-hidden border-2 border-gray-300" open>
+                    <summary class="p-4 font-extrabold text-xl hover:bg-gray-50 text-gray-800 border-b border-gray-300">【AI 應用】潛在問題、風險與注意事項（重要警示）</summary>
+                    <div class="details-content">
+                        <h3 class="font-extrabold text-2xl text-red-600 mb-4 border-b pb-2">一、 AI 撰寫邀請函的潛在問題/風險</h3>
+                        <ul class="list-disc ml-6 space-y-4 text-gray-700">
+                            <li class="text-red-700">**極高風險：傳統格式錯誤或術語不當**
+                                <p class="text-sm text-red-600 bg-red-50 p-2 rounded-md border-l-4 border-red-500 mt-1">AI 可能忽略應用文的嚴謹性，如：稱謂與提稱語的不匹配、錯用或遺漏結尾敬辭。尤其在處理**上行書信**時，錯誤的禮儀用語會造成嚴重失禮。</p>
+                            </li>
+                            <li class="text-orange-700">**中度風險：活動資訊細節錯誤或矛盾**
+                                <p class="text-sm text-orange-600 bg-orange-50 p-2 rounded-md border-l-4 border-orange-500 mt-1">若輸入的資訊不夠精確或有歧義，AI 在整理時可能產生錯誤的時間、地點，或是在不同段落出現資訊矛盾，導致受邀者無法出席。</p>
+                            </li>
+                            <li class="text-orange-700">**中度風險：缺乏人情味或過於制式化**
+                                <p class="text-sm text-orange-600 bg-orange-50 p-2 rounded-md border-l-4 border-orange-500 mt-1">AI 產出的文案可能過於工整，缺乏主辦方獨有的誠意、熱情或風格，讓受邀者感到這是罐頭信，降低參與意願。</p>
+                            </li>
+                            <li class="text-blue-700">**一般風險：過度修飾導致重點模糊**
+                                <p class="text-sm text-blue-600 bg-blue-50 p-2 rounded-md border-l-4 border-blue-500 mt-1">AI 有時會過度使用華麗的詞彙來「美化」文案，反而沖淡了活動主題、時間、地點等必須傳達的核心資訊。</p>
+                            </li>
+                        </ul>
+
+                        <h3 class="font-extrabold text-2xl text-red-600 mt-8 mb-4 border-b pb-2">二、 避免與注意事項（降低風險的行動指南）</h3>
+                        <ul class="list-disc ml-6 space-y-4 text-gray-700">
+                            <li class="text-red-700">**【第一防線】最終人工作業與校對**
+                                <p class="text-sm text-red-600 bg-red-50 p-2 rounded-md border-l-4 border-red-500 mt-1 font-semibold">所有 AI 生成的邀請函，必須由**人工再次審核**。請特別檢查：受邀人姓名、活動時間地點，以及所有的**傳統敬語和格式**。</p>
+                            </li>
+                            <li class="text-orange-700">**【關鍵步驟】精準設定受眾與語氣**
+                                <p class="text-sm text-orange-600 bg-orange-50 p-2 rounded-md border-l-4 border-orange-500 mt-1">在提示詞中，應明確告訴 AI **「這封信的受邀對象是誰？」**，並指定**「信件應使用的提稱語和結尾敬辭」**，引導 AI 選擇正確的禮儀用語。</p>
+                            </li>
+                            <li class="text-orange-700">**【效率優化】分段寫作，先求骨架再添肉**
+                                <p class="text-sm text-orange-600 bg-orange-50 p-2 rounded-md border-l-4 border-orange-500 mt-1">優先要求 AI 產出**活動資訊清晰**的「正文骨架」，再針對開場、結尾、氛圍營造等「肉」的部分單獨優化，確保核心資訊的準確性。</p>
+                            </li>
+                            <li class="text-blue-700">**【風格調整】強調「獨特價值」而非「活動過程」**
+                                <p class="text-sm text-blue-600 bg-blue-50 p-2 rounded-md border-l-4 border-blue-500 mt-1">在提示 AI 寫作時，應明確引導它突顯**「受邀人參與後能獲得的獨特價值或感受」**，而非僅僅是羅列議程，以增加邀請函的吸引力。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
+                
+                <!-- 作業區塊 (保持倒數第二) -->
+                <details class="mb-4 bg-indigo-50 rounded-lg shadow-md overflow-hidden">
+                    <summary class="p-4 font-semibold text-lg hover:bg-indigo-100">【作業】邀請函寫作任務</summary>
+                    <div class="details-content">
+                        <p class="text-gray-700 mb-3">請擬一篇「邀請函」，可以配合生成式 AI 進行輔助創作。</p>
+                        <ul class="list-disc ml-6 space-y-1 font-semibold text-indigo-700">
+                            <li>請完成老師上傳的**報告單格式**。</li>
+                            <li>教材區與作業區亦有範本可供參考。</li>
+                            <li>請將作業上傳至課輔系統作業區。</li>
+                        </ul>
+                    </div>
+                </details>
+                
+                <!-- 實戰應用區塊 (已移動到最後) -->
+                <details class="mb-4 bg-red-50 rounded-lg shadow-md overflow-hidden" open>
+                    <summary class="p-4 font-extrabold text-lg hover:bg-red-100 text-red-700">【實戰應用】如何利用 AI 工具撰寫邀請函（四步驟）</summary>
+                    <div class="details-content">
+                        <p class="text-gray-700 mb-4 font-semibold border-b pb-2 text-primary-color">AI 寫作的價值在於「快速框架生成」、「個性化文案調整」與「創意發想」。</p>
+                        
+                        <h3 class="font-bold text-lg text-red-600 mb-2">步驟一：設定框架與基本資訊</h3>
+                        <p class="text-sm text-gray-600 mb-2">將活動的硬資訊（時間、地點、主題、受邀對象）提供給 AI，要求它生成一個基礎的正式信函框架。</p>
+                        <div class="bg-red-100 p-3 rounded-md mb-3 text-sm italic border-l-4 border-red-500">
+                            <span class="font-semibold text-red-700">提示語範例：</span>
+                            「請幫我生成一封邀請函的基本框架，主題為 **[AI 寫作應用工作坊]**，時間是 **[12月10日 下午2:00]**，地點是 **[台北市信義區XX路XX號]**。語氣必須**正式且專業**。」
+                        </div>
+                        
+                        <h3 class="font-bold text-lg text-red-600 mb-2">步驟二：個性化與風格調整</h3>
+                        <p class="text-sm text-gray-600 mb-2">針對特定的受邀人身份（如長輩、師長、客戶），要求 AI 調整信件中的稱謂、提稱語、問候語以及整體語氣。</p>
+                        <div class="bg-red-100 p-3 rounded-md mb-3 text-sm italic border-l-4 border-red-500">
+                            <span class="font-semibold text-red-700">提示語範例：</span>
+                            「假設受邀者為**中文系教授**，對 AI 寫作有興趣，請根據他們的身份，幫我調整**開場問候**和**邀請內容**，使其更具**學術性**和**個人尊重**。」
+                        </div>
+
+                        <h3 class="font-bold text-lg text-red-600 mb-2">步驟三：創意設計與氛圍營造</h3>
+                        <p class="text-sm text-gray-600 mb-2">要求 AI 撰寫富有吸引力的開場語和結尾語，營造活動氛圍，並確保行動呼籲（RSVP）清晰。</p>
+                        <ul class="list-disc ml-6 space-y-1 text-gray-700 text-sm">
+                            <li>**開場語：** 「幫我設計一個有吸引力的開場語，語氣**熱情且富有創意**，適合邀請對 AI 感興趣的人參加寫作工作坊。」</li>
+                            <li>**結束語：** 「請設計一段友好的結尾語，**鼓勵受邀者回覆**，並表達**誠摯期待**，確保 RSVP 資訊（如回覆期限）包含在內。」</li>
+                        </ul>
+
+                        <h3 class="font-bold text-lg text-red-600 mb-2 mt-4">步驟四：人工審核與優化</h3>
+                        <p class="text-sm text-gray-600">AI 生成的內容需經過人工審核，確保傳統書信禮儀（如**稱謂、提稱語、結尾敬辭**）正確無誤，並調整細節，使其完全符合您的活動和對象需求。</p>
+                        <p class="text-xs text-red-500 mt-2">（此步驟為寫作的關鍵核心：AI 輔助創作，但人來掌握品質。）</p>
+                    </div>
+                </details>
+                
+            </section>
+
+        </main>
+    </div>
+
+    <script>
+        // JavaScript 處理標籤頁切換邏輯
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        // 確保 AI 邀請函標籤頁預設是開啟的
+        document.querySelector('[data-tab="ai-invitation"]').classList.add('active-tab-button', 'border-primary-color', 'text-primary-color');
+        document.getElementById('ai-invitation').classList.add('active');
+
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetTab = button.dataset.tab;
+
+                // 移除所有按鈕和內容的啟用狀態
+                tabButtons.forEach(btn => btn.classList.remove('active-tab-button', 'border-primary-color', 'text-primary-color'));
+                tabContents.forEach(content => content.classList.remove('active'));
+
+                // 啟用被點擊的按鈕和對應的內容
+                button.classList.add('active-tab-button', 'border-primary-color', 'text-primary-color');
+                document.getElementById(targetTab).classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
